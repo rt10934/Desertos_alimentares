@@ -11,8 +11,8 @@
 # onde se encontram os arquivos .txt descompactados do arquivo Dados_aaaammdd.zip
 # Exemplo: setwd("c:/POF2018/Dados_aaaammdd/")
 
-# Declarar o diretório da pasta referente a essa etapa (Etapa_1)
-setwd("D:/MDS/Envio_ao_MDS/Dados/Etapa_1") 
+# Declarar o "diretório" da pasta referente a essa etapa (Etapa_1)
+setwd("diretório/Etapa_1") 
 
 # Leitura do REGISTRO - DESPESA INDIVIDUAL (Questionário POF 4)
 despesa_individual <- readRDS("DESPESA_INDIVIDUAL.rds") # importando base necessária:
@@ -59,4 +59,5 @@ despesa_individual <- aggregate(valor_mensal~UF,data=desp_individual,sum)
 names(despesa_individual) <- c("soma")
 
 
-write.csv(desp_individual, file = "H:/Meu Drive/GPP/MDS - Desertos Alimentares/POF_FromTese/CSVs/desp_individual.csv") # "$$$$ perguntar giovani"
+write.csv(desp_individual, file = "Diretório/Etapa_2/desp_individual.csv") # "$$$$ perguntar giovani"
+# colocar o "diretório" da pasta relacionada a armazenamento a etapa 2

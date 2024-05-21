@@ -12,8 +12,8 @@
 # Exemplo: setwd("c:/POF2018/Dados_aaaammdd/")
 
 
-# Declarar o diretório da pasta referente a essa etapa (Etapa_1)
-setwd("D:/MDS/Envio_ao_MDS/Dados/Etapa_1") 
+# Declarar o "diretório" da pasta referente a essa etapa (Etapa_1)
+setwd("diretório/Etapa_1") 
 
 
 #  Leitura do REGISTRO - CADERNETA COLETIVA (Questionário POF 3)
@@ -154,12 +154,14 @@ morador_uc <-
 
 soma_familia <- sum( morador_uc$PESO_FINAL )
 
-write.csv(morador_uc, file = "H:/Meu Drive/GPP/MDS - Desertos Alimentares/POF_FromTese/CSVs/morador_uc.csv")
+write.csv(morador_uc, file = "diretório/morador_uc.csv")
+write.csv(morador_uc, file = "diretório/morador_uc.csv") # dado usado nas duas etapas
+# colocar o "diretório" da pasta relacionada a armazenamento a etapa 2 e pasta 3
 
 #Essa soma uf está batendo com a média Brasil 658,23
 soma_uf_pre <- aggregate(valor_mensal~UF,data=junta_ali,sum)
 names(soma_uf_pre) <- c("somauf")
 
-write.csv(junta_ali, file = "H:/Meu Drive/GPP/MDS - Desertos Alimentares/POF_FromTese/CSVs/junta_ali.csv")
-
+write.csv(junta_ali, file = "diretório/Etapa_2/junta_ali.csv")
+# colocar o "diretório" da pasta relacionada a armazenamento a etapa 2
 
