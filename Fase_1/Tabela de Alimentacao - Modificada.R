@@ -147,7 +147,7 @@ morador_uc <-
         ] ) # Apenas um registro por UC
 
 # Calculando o número de UC's expandido 
-# A cada domicílio é associado um peso_final e este ? também associado a cada uma
+# A cada domicílio é associado um peso_final e este é também associado a cada uma
 # de suas unidades de consumo 
 # Portanto, o total de unidades de consumo (familias) expandido, é o resultado da 
 # soma dos pesos_finais a elas associados

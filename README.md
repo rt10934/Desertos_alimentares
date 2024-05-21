@@ -4,19 +4,21 @@
 
 Para a obtenção dos resultados desta parte do produto, foram realizadas três etapas. Na primeira etapa, foram coletados os dados. Na segunda etapa, houve a junção dos dados coletados com os dicionários de alimentos por grupo do guia alimentar para a população brasileira, assim como com os dicionários de locais de compra pela Classificação Nacional das Atividades Econômicas (CNAE). Na terceira e última etapa, os dados foram processados para obter as tabelas inseridas no texto. Cada uma dessas etapas será descrita de maneira mais detalhada abaixo.
 
-# GPP MDS (Tabelas do produto 4)
+### Etapa 1: abertura dos microdados (R)
 
-# Etapa 1 (Abertura dos microdados (R))
+São gerados nessa etapa dados referentes a processamentos realizados na etapa 2 e na etapa 3, em que são gerados as tabelas "junta_ali" usada na etapa 2 para realizar o merge com os dicionarios, e também é gerado a tabela "morador_uc" usado na etapa 3.
 
-# Etapa 2 (Inclusão dos dicionarios dos alimentos por grupo do Guia Alimentar para a População Brasileira, locais de compra pelo CNAE (Stata))
+### Etapa 2: inclusão dos dicionarios dos alimentos por grupo do Guia Alimentar para a População Brasileira, locais de compra pelo CNAE (Stata)
 
-# Etapa 3 (tabelas (R))
+Nesta etapa, é realizado o mrge entre a tabela confeccionada na etapa 1 (junta_ali), com os dicionários dos alimentos por grupo do Guia Alimentar para a População Brasileira "dicionario_alimentos", locais de compra pelo CNAE "dicionario_locais"
 
-## Tabelas presentes no "script1" (Tabela 5)
+### Etapa 3 (tabelas do Produto 4(R))
 
-### No script tabela 5 se encontram: (ajustar)
+##### **OBS: alterar nomes conforme publicacao final**
 
-##### **OBS: alterar nmes conforme publicacao final**
+#### Tabelas presentes no "script_1"
+
+No script_1 se encontram as seguintes tabelas do produto 4:
 
 -   **Tabela 3** Quantidade de itens e percentual de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira. Deserto Alimentar de 2018 e POF 2017/2018**("t3_completa")**.
 
@@ -26,23 +28,19 @@ Para a obtenção dos resultados desta parte do produto, foram realizadas três 
 
 -   **Tabela 15** Quantidade de itens e percentual de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira POF 2017/2018 para os níveis de renda.
 
-## Tabelas presentes no "script2" (Tabela 4)
-
-### No script tabela 4 se encontram:
+#### No script_2 estão presentes as tabelas:
 
 -   **Tabela 4.** Milhões de itens de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira e local de compra da POF 2017/2018 **("t4_completa")**
 
 **OBS:** As tabelas "t4_Rural", "t4_Urbano", "t4_Primeiro_sm", "t4_Segundo_sm", "t4_Terceiro_sm" e "t4_Quarto_sm", são semelhantes a tabela anterior, porém filtradas para os grupos de renda e localização (não incorporadas ao texto)
 
--   **Tabela 5.** Milhões de itens de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira e local de compra da POF 2017/2018 e o percentual proveniente de aquisição de cada local de compra por grupo alimentar.
+-   **Tabela 5.** Milhões de itens de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira e local de compra da POF 2017/2018 e o percentual proveniente de aquisição de cada local de compra por grupo alimentar **("t10_completa")**
 
 **OBS:** As tabelas "t10_Rural", "t10_Urbano", "t10_Primeiro_sm", "t10_Segundo_sm", "t10_Terceiro_sm" e "t10_Quarto_sm", são semelhantes a tabela anterior, porém filtradas para os grupos de renda e localização (não incorporadas ao texto)
 
-## Tabelas presentes no "script3" (Tabela 8)
+#### No script_3 estão presentes as tabelas:
 
-### No script tabela 4 se encontram:
-
-#### Tabelas de Milhões de itens de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira e estabelecimento de alimentação (CNAE):
+Tabelas de Milhões de itens de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira e estabelecimento de alimentação (CNAE):
 
 -   **Tabela 6.** Milhões de itens de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira e estabelecimento de alimentação (CNAE) **("t8_completa")**
 
@@ -58,7 +56,7 @@ Para a obtenção dos resultados desta parte do produto, foram realizadas três 
 
 -   **Tabela 22.** Milhões de itens de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira e estabelecimento de alimentação (CNAE) para o quarto quartil **("t8_Quarto_sm")**
 
-#### Tabelas de Milhões de itens e percentual de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira e estabelecimento de alimentação (CNAE) e o percentual proveniente de aquisição de cada estabelecimento de compra por grupo alimentar:
+Tabelas de Milhões de itens e percentual de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira e estabelecimento de alimentação (CNAE) e o percentual proveniente de aquisição de cada estabelecimento de compra por grupo alimentar:
 
 -   **Tabela 7.** Milhões de itens e percentual de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira e estabelecimento de alimentação (CNAE) e o percentual proveniente de aquisição de cada estabelecimento de compra por grupo alimentar **("t9_completa")**
 
@@ -74,6 +72,6 @@ Para a obtenção dos resultados desta parte do produto, foram realizadas três 
 
 -   **Tabela 23.** Milhões de itens de aquisição de alimentos pela população por grupo do Guia Alimentar para a População Brasileira e estabelecimento de alimentação (CNAE) o percentual proveniente de aquisição de cada estabelecimento de compra por grupo alimentar para o quarto quartil **("t9_Quarto_sm")**
 
-## Tabela do perfil de estabelecimentos por UF
+#### O script_4 apresenta os perfis de estabelecimento por UF:
 
--   **"Perfil_estabelec"** está presente no sript4 (tabela classiciação)
+Foi realizado em duas etapas: Na primeira etapa, realizada no R e alocada no 'script_4', é feita a junção dos dados. Na segunda etapa, feita no Excel ('nome.xls'), são classificados os perfis de estabelecimento por UF.
