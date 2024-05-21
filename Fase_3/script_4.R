@@ -5,8 +5,8 @@
 library(dplyr)
 library(haven)
 
-# Definindo o diretório de trabalho
-setwd("D:/MDS/Envio_ao_MDS/Dados/Etapa_3/")
+# Definindo o "diretório" de trabalho, necessita colocar o caminho
+setwd("diretório/Etapa_3/")
 # Bases necessarias:
 pof_morador <- read_dta("pof_morador.dta") |> dplyr::mutate(uf=as.numeric(uf))
 nome_local <- read_dta("nome_local.dta") |> dplyr::mutate(cod_local=as.numeric(cod_local))

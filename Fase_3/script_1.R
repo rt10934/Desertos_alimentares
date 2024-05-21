@@ -2,8 +2,8 @@
 library(dplyr)
 library(haven)
 
-# Definindo o diretório de trabalho (local dos dados processados)
-setwd("D:/MDS/Envio_ao_MDS/Dados/Etapa_3/")
+# Definindo o "diretório" de trabalho, necessita colocar o caminho
+setwd("diretório/Etapa_3/")
 ################################################################################
 # Primeira etapa----------------------------------------------------------------
 ################################################################################

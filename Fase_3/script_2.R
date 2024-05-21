@@ -3,8 +3,8 @@ library(dplyr)
 library(haven)
 library(tidyr)
 
-# Definindo o diretório de trabalho (local dos dados processados)
-setwd("D:/MDS/Envio_ao_MDS/Dados/Etapa_3/")
+# Definindo o "diretório" de trabalho, necessita colocar o caminho
+setwd("diretório/Etapa_3/")
 # bases necessarias:------------------------------------------------------------
 pof_compras <- read_dta("pof_compras.dta") # 
 morador_uc_key <- read_dta("morador_uc_key.dta") |>
