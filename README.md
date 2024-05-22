@@ -1,18 +1,18 @@
 # PROJETO DE COOPERAÇÃO TÉCNICA PARA A SEGURANÇA ALIMENTAR E NUTRICIONAL: A DISPONIBILIDADE E O ACESSO À ALIMENTOS SAUDÁVEIS E O COMBATE À POBREZA RURAL - IICA/BRA/17/001
 
-## **Produto 4**: Classificação dos estabelecimentos alimentares nos grupos do guia alimentar para a população brasileira
+## Classificação dos estabelecimentos alimentares nos grupos do guia alimentar para a população brasileira
 
-Para a obtenção dos resultados desta parte do produto, foram realizadas três etapas. Na primeira etapa, foram coletados os dados. Na segunda etapa, houve a junção dos dados coletados com os dicionários de alimentos por grupo do guia alimentar para a população brasileira, assim como com os dicionários de locais de compra pela Classificação Nacional das Atividades Econômicas (CNAE). Na terceira e última etapa, os dados foram processados para obter as tabelas inseridas no texto. Cada uma dessas etapas será descrita de maneira mais detalhada abaixo.
+Para a classificação foram realizadas três etapas. (i) coleta de dados; (ii) inclusão dos dicionários de alimentos por grupo do guia alimentar para a população brasileira e de locais de compra pela Classificação Nacional das Atividades Econômicas (CNAE); (iii) processamento dos dados e elaboração de tabelas. Essas etapas foram detalhadas a seguir:
 
 ### Etapa 1: abertura dos microdados (R)
 
-São gerados nessa etapa dados referentes a processamentos realizados na etapa 2 e na etapa 3, em que são gerados as tabelas "junta_ali" usada na etapa 2 para realizar o merge com os dicionarios, e também é gerado a tabela "morador_uc" usado na etapa 3.
+Foram gerados os dados da Pesquisa de Orçamentos Familiares 2017/2018 (POF 2017/2018) para etapa 2 e etapa 3. A base "junta_ali" contêm a Caderneta de Despesa Coletiva e Despesa Individual da POF 2017/2018, realizada conforme programação "Tabela de Alimentação" para uso dos microdados disponibilizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE), com modificação para uso de código completo de produtos e inclusão de variáveis como a renda domiciliar e código de local de compra. Nesta etapa também foi gerada a base "morador_uc", correspondente as unidades de consumo registradas nos microdados.
 
-### Etapa 2: inclusão dos dicionarios dos alimentos por grupo do Guia Alimentar para a População Brasileira, locais de compra pelo CNAE (Stata)
+### Etapa 2: inclusão dos dicionários dos alimentos por grupo do Guia Alimentar para a População Brasileira, locais de compra pelo CNAE (Stata)
 
-Nesta etapa, é realizado o mrge entre a tabela confeccionada na etapa 1 (junta_ali), com os dicionários dos alimentos por grupo do Guia Alimentar para a População Brasileira "dicionario_alimentos", locais de compra pelo CNAE "dicionario_locais"
+Foi realizada junção (merge) das bases geradas na Etapa 1 com os dicionários dos alimentos por grupo do Guia Alimentar para a População Brasileira "dicionario_alimentos" e locais de compra pelo CNAE "dicionario_locais". Esses dicionários foram elaborados com base no Mapeamento de Desertos Alimentares de 2018 e validação de especialistas.
 
-### Etapa 3 (tabelas do Produto 4(R))
+### Etapa 3: processamento dos dados e elaboração de tabelas (R)
 
 ##### **OBS: alterar nomes conforme publicacao final**
 
