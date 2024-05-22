@@ -45,8 +45,7 @@ gen key_morador=uf+estrato_pof+tipo_situacao_reg+cod_upa+num_dom+num_uc
 
 save "*diretório\Etapa_3\pof_compras_morador", replace
 
-/*					JUNTANDO POF DATA COM MORADOR DATA
-*/
+/*JUNTANDO POF DATA COM MORADOR DATA*/
 
 clear all
 cd "*diretório\Etapa_3\"
@@ -60,7 +59,6 @@ use "*diretório\pof_compras_morador.dta"
 
 cd "*diretório\Etapa_3\"
 merge m:1 key_morador using morador_uc_key.dta
-*4.486 sem match, peso equivalente a 5.375.796
 
 drop v1 _merge
 save pof_morador.dta, replace
