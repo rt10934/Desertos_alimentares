@@ -74,4 +74,4 @@ Tabelas de Milhões de itens e percentual de aquisição de alimentos pela popul
 
 #### O script_4 apresenta os perfis de estabelecimento por UF:
 
-Foi realizado em duas etapas: Na primeira etapa, é realizada no R e alocada no 'script_4', é feita a junção dos dados. Na segunda etapa, feita no Excel ('nome.xls'), são classificados os perfis de estabelecimento por UF.
+Foi realizado em duas etapas: Na primeira etapa, é realizada no R e alocada no 'script_4', é feita a junção dos dados. Na segunda etapa, feita no Excel ('Classificacao dos Estabelecimentos.xls'), são classificados os perfis de estabelecimento por UF.
